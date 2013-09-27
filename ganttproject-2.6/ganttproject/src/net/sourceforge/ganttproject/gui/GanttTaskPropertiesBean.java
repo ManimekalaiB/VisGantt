@@ -113,7 +113,7 @@ public class GanttTaskPropertiesBean extends JPanel {
 
   private JComboBox BarField;
 
-  public String Pattern[] = {"Small","Medium","Large"};
+  public String Pattern[] = {"LOW","MEDIUM","LARGE"};
 
   public static int Barsize=5;
 
@@ -437,17 +437,17 @@ public class GanttTaskPropertiesBean extends JPanel {
       }
 
       /*Function for resizing GanttBar*/
-      if(BarField.getSelectedItem()=="Small")
+      if(BarField.getSelectedItem()=="LOW")
       {
     	  Barsize=5;
 
     	  }
-      else if(BarField.getSelectedItem()=="Medium")
+      else if(BarField.getSelectedItem()=="MEDIUM")
       {
     	  Barsize=12;
 
       }
-      else if(BarField.getSelectedItem()=="Large")
+      else if(BarField.getSelectedItem()=="LARGE")
       {
     	  Barsize=18;
       }
